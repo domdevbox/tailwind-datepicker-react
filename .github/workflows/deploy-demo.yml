@@ -27,7 +27,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install packages
         working-directory: ./demo-app
-        run: npm ci
+        run: npm i
       - name: Build project
         working-directory: ./demo-app
         run: npm run build
