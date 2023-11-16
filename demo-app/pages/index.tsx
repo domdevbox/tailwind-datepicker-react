@@ -10,6 +10,7 @@ const Home: NextPage = () => {
 		autoHide: true,
 		todayBtn: true,
 		clearBtn: true,
+		language: "fa-IR",
 		inputDateFormatProp: {
 			day: "2-digit",
 			month: "2-digit",
@@ -28,7 +29,7 @@ const Home: NextPage = () => {
 		},
 	}
 	return (
-		<div className="flex flex-col items-center w-full h-full gap-5 mt-20">
+		<div className="flex flex-col items-center w-full h-full gap-5 mt-20" dir='rtl'>
 			<ThemeSelector />
 			<h1 className="text-2xl font-bold">Date Picker Demo</h1>
 			<div className="relative w-1/4">
